@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quote Request Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Bookleaper Quote Request</h1>
+    <p id="description">Need books? Fill out our quote request form and we'll get back to you right away!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Enter your full name" /></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email address" /></label>
+      <label for="number" id="number-label">Quantity: <input id="number" type="number" min="1" max="10000" placeholder="Enter the quantity of books" /></label>
+      <label for="book-title">Title of Book: <input id="book-title" type="text" required placeholder="Enter the title of the book" /></label>
+      <label for="dropdown">Type of organization:
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">School</option>
+          <option value="2">Non-profit</option>
+        </select>
+      </label>
+      <legend>What format do you prefer?</legend>
+      <label for="paperback"><input type="radio" id="paperback" name="book-format" class="inline" value="1" /> Paperback </label>
+      <label for="hardcover"><input type="radio" id="hardcover" name="book-format" class="inline" value="1" /> Hardcover </label>
+      <legend>What cooperative contract would you like us to use? (select one)</legend>
+      <label for="2013-purchasing-coop"><input type="checkbox" id="2013-purchasing-coop" value="1" class="inline" />2013 Purchasing Cooperative</label>
+      <label for="region-5-setx"><input type="checkbox" id="region-5-setx" value="2" class="inline" />Region 5 SETX Cooperative</label>
+      <label for="region-7"><input type="checkbox" id="region-7" value="3" class="inline" />Region 7 Purchasing Cooperative</label>
+      <label for="instructions">Do you have additional instructions?
+        <textarea id="instructions" rows="3" cols="30" placeholder="Enter your instructions here"></textarea>
+      </label>
+       <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
